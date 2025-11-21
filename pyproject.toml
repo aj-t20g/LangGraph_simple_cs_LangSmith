@@ -10,11 +10,3 @@ dependencies = [
     "langsmith>=0.2.0",
     "python-dotenv>=1.0.0",
 ]
-
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_backend"
-
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["*"]
