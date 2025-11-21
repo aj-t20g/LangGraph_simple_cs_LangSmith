@@ -1,0 +1,20 @@
+[project]
+name = "product-support-agent"
+version = "0.1.0"
+description = "A customer support agent for product information using LangGraph and Claude"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.2.55",
+    "langchain-anthropic>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langsmith>=0.2.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_backend"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
